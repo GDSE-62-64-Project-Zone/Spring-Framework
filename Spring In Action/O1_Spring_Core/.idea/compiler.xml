@@ -6,7 +6,22 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="O17_File_Uploading" />
+        <module name="O7_Value_Injection" />
+        <module name="O13_Spring_with_JSON" />
+        <module name="O15_Spring_Boot" />
+        <module name="O4_DI_In_Spring" />
+        <module name="O5_Spring_Modes" />
         <module name="O1_Spring_Core" />
+        <module name="O3_Bean_Life_Cycle" />
+        <module name="O12_Mapping_Spec" />
+        <module name="O9_Spring_Web_MVC" />
+        <module name="O8_Spring_Environment" />
+        <module name="O11_REST_Controllers" />
+        <module name="O14_Spring_Data_JPA" />
+        <module name="O10_Controllers" />
+        <module name="O2_Bean_Scopes" />
+        <module name="O6_Spring_Configurations" />
       </profile>
     </annotationProcessing>
   </component>
