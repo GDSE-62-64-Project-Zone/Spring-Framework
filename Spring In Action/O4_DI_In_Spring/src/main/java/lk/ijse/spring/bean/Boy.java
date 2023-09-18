@@ -4,17 +4,37 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
-public class Boy {
+public class Boy implements Inject{
 
-    @Autowired
-    Girl girl;
+    //Property injection
+//    @Autowired
+    GoodGirlAgreement girl;
 
-    public Boy(){
+
+    // Constructor Injection
+//    @Autowired
+    public Boy(GoodGirlAgreement girl){
+//        this.girl=girl;
         System.out.println("Boy Instantiated");
     }
 
+
+    //setter method injection
+//    @Autowired
+    public void setGirl(GoodGirlAgreement girl){
+//        this.girl=girl;
+    }
+
+
     public void trying(){
-//        Girl girl = new Girl();
         girl.chatting();
+    }
+
+
+    //Interface through injection
+    @Autowired
+    @Override
+    public void setInject(GoodGirlAgreement gg) {
+        this.girl=gg;
     }
 }
