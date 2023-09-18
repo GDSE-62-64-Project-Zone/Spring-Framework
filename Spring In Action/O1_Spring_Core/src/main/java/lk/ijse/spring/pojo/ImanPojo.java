@@ -2,7 +2,7 @@ package lk.ijse.spring.pojo;
 
 import org.springframework.stereotype.Component;
 
-@Component
+@Component("iman-bro")
 public class ImanPojo {
     public ImanPojo(){
         System.out.println("Iman Pojja");
