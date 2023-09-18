@@ -1,6 +1,7 @@
 package lk.ijse.spring;
 
 import lk.ijse.spring.config.AppConfig;
+import lk.ijse.spring.pojo.BasicDataSource;
 import lk.ijse.spring.pojo.ImanPojo;
 import lk.ijse.spring.pojo.UshanPojo;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -25,5 +26,13 @@ public class AppInitializer {
         System.out.println(iman2);
         System.out.println(iman3);
         System.out.println(ushanPojo);
+
+
+        BasicDataSource pool1 = ctx.getBean(BasicDataSource.class);
+        BasicDataSource pool2 = ctx.getBean(BasicDataSource.class);
+        BasicDataSource pool3 = (BasicDataSource) ctx.getBean("pool");
+        System.out.println(pool1);
+        System.out.println(pool2);
+        System.out.println(pool3);
     }
 }
