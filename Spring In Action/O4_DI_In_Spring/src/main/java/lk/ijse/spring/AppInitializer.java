@@ -2,6 +2,7 @@ package lk.ijse.spring;
 
 import lk.ijse.spring.bean.Boy;
 import lk.ijse.spring.config.AppConfig;
+import lk.ijse.spring.pojo.Hashan;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class AppInitializer {
@@ -11,9 +12,8 @@ public class AppInitializer {
         ctx.refresh();
         ctx.registerShutdownHook();
 
-
-        Boy iman = ctx.getBean(Boy.class);
-        iman.trying();
+        Hashan hashan = ctx.getBean(Hashan.class);
+        hashan.trying();
 
     }
 }
