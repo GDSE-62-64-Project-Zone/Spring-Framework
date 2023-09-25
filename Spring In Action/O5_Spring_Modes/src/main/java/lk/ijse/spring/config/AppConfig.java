@@ -18,6 +18,7 @@ public class AppConfig {
     //What is the meaning of satisfying inter-bean dependencies.?
     //Does light mode satisfy inter_bean dependencies.?
     //Does full mode satisfy inter_bean dependencies?
+    //Does light mode gives prototype objects.?
 
 
     //Full Mode
