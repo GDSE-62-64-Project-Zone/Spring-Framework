@@ -10,6 +10,16 @@ import org.springframework.context.annotation.Configuration;
 @ComponentScan(basePackages = "lk.ijse.spring.pojo")
 public class AppConfig {
 
+    //what is an inter-bean dependency.?
+    //When do we need an inter-bean dependency?
+    //What are the two modes of applying bean methods
+    //What is Full Mode.?
+    //What is light Mode.?
+    //What is the meaning of satisfying inter-bean dependencies.?
+    //Does light mode satisfy inter_bean dependencies.?
+    //Does full mode satisfy inter_bean dependencies?
+
+
     //Full Mode
 //    @Bean
 //    public PojoTwo pojoTwo(){
