@@ -1,11 +1,16 @@
 package lk.ijse.spring.pojo;
 
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 @Component
 public class PojoOne {
-    public PojoOne(){
-        System.out.println("PojoOne Instantiated");
+
+//    public PojoOne(){
+//        System.out.println("PojoOne Instantiated : Default");
+//    }
+    public PojoOne(@Value("Hello Spring") String id){
+        System.out.println("PojoOne Instantiated "+id);
     }
 }
