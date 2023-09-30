@@ -12,7 +12,7 @@ public class CustomerController {
 
     //handler methods
     //handler mapping
-    @GetMapping
+    @GetMapping//which http method
     public String helloSpring(){
         return "Hello Iam Spring: Your Request Received";
     }
