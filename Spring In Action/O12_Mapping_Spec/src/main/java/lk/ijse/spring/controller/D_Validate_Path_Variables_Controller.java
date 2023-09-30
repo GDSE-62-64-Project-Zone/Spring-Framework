@@ -51,6 +51,16 @@ public class D_Validate_Path_Variables_Controller {
     }
 
 
+    //http://localhost:8080/mapping/validate/myName/Ashan
+    //http://localhost:8080/mapping/validate/myName/Dasun
+    //path variable
+    @GetMapping(path = "/myName/{name:[A-Z]{1}[a-z]{4}}")//Dual wild card mapping
+    public String getMapping6(@PathVariable String name){
+        System.out.println(name);
+        return "Get Mapping Invoked 6"+name;
+    }
+
+
 
 
 
