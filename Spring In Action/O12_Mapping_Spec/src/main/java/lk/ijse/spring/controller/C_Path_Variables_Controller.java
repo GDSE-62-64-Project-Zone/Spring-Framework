@@ -33,4 +33,11 @@ public class C_Path_Variables_Controller {
         return "Get Mapping Invoked 2 "+id+" "+name;
     }
 
+    //localhost:8080/mapping/pathVariable/id/Dasun
+    @GetMapping(path = "/id/{name}")
+    public String getMapping3(@PathVariable String name){
+        System.out.println(name);
+        return "Get Mapping Invoked 3 "+name;
+    }
+
 }
