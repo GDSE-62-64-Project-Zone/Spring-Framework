@@ -10,7 +10,7 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 @EnableWebMvc
 @Configuration
-@ComponentScan(basePackages = "lk.ijse.spring.pojo")
+@ComponentScan(basePackages = {"lk.ijse.spring.pojo","lk.ijse.spring.controller"})
 public class WebAppConfig implements BeanNameAware, BeanFactoryAware, ApplicationContextAware, InitializingBean, DisposableBean {
     public WebAppConfig(){
         System.out.println("WebAppConfig : Instantiated");
