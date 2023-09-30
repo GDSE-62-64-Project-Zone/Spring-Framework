@@ -1,10 +1,7 @@
 package lk.ijse.spring.controller;
 
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/rest")
@@ -28,5 +25,15 @@ public class RestArchController {
     @PostMapping
     public String postMapping(){
         return "Post Method Invoked";
+    }
+
+    @PutMapping
+    public String putMapping(){
+        return "Put Mapping Invoked";
+    }
+
+    @DeleteMapping
+    public String deleteMapping(){
+        return "Delete Mapping Invoked";
     }
 }
