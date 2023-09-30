@@ -29,5 +29,19 @@ public class D_Validate_Path_Variables_Controller {
         return "Get Mapping Invoked 2 ";
     }
 
+    //http://localhost:8080/mapping/validate/id/aaa
+    @GetMapping(path = "/id/???")
+    public String getMapping3(){
+        return "Get Mapping Invoked 3 ";
+    }
+
+
+    @GetMapping(path = "/my/name/*/end")
+    public String getMapping4(){
+        return "Get Mapping Invoked 4 ";
+    }
+
+
+
 
 }
