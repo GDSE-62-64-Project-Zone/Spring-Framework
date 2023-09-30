@@ -15,13 +15,15 @@ public class D_Validate_Path_Variables_Controller {
 //04Multiple Wild Card Validator path={/path/**/id}
 
 
-    //matchers with path segments
-    @GetMapping(path = "/i?d")
+    //http://localhost:8080/mapping/validate/ied
+    //http://localhost:8080/mapping/validate/iad
+    //http://localhost:8080/mapping/validate/ild
+    @GetMapping(path = "/i?d")//character mapping ?
     public String getMapping2(){
         return "Get Mapping Invoked 1 ";
     }
 
-    //request narrow downing using path segments
+    //http://localhost:8080/mapping/validate/idrm/namaae
     @GetMapping(path = "/id??/nam??e")
     public String getMapping1(){
         return "Get Mapping Invoked 2 ";
