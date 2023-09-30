@@ -2,6 +2,7 @@ package lk.ijse.spring.controller;
 
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -19,8 +20,19 @@ public class RestArchController {
     //Ambiguous Mapping
 
 
+//    @GetMapping
+//    public void test1(){
+//        System.out.println("Test method invoked");
+//    }
+
     @GetMapping
-    public void test(){
-        System.out.println("Test method invoked");
+    public String test2(){
+       return "Hello this is generated from Spring";
+    }
+
+
+    @PostMapping
+    public String postMapping(){
+        return "Post Method Invoked";
     }
 }
