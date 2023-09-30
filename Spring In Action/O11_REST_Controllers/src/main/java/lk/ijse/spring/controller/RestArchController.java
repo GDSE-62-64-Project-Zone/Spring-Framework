@@ -26,6 +26,8 @@ public class RestArchController {
         return "Get Mapping Invoked 1";
     }
 
+    //if you repeat same http method like this. there will be an error at runtime
+    //stating this is an ambiguous mapping
 //    @GetMapping
 //    public String getMapping2(){
 //        return "Get Mapping Invoked 2";
