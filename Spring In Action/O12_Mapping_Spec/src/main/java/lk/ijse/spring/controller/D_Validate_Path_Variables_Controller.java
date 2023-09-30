@@ -2,9 +2,11 @@ package lk.ijse.spring.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@RequestMapping("/validate")
 public class D_Validate_Path_Variables_Controller {
 //With path variables we have the validating options also
 //01.Reg Ex Validation path={/path:[a-z]{3}}
