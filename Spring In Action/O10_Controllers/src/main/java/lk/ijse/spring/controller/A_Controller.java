@@ -13,7 +13,7 @@ public class A_Controller {
     @GetMapping
     public ModelAndView test(){
         ModelAndView m= new ModelAndView("/customer");
-        m.addObject("ID","C001");
+        m.addObject("ID","C005");
         return m;
     }
 }

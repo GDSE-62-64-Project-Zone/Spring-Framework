@@ -12,6 +12,7 @@
 </head>
 <body>
 <h1>Customer Page ${ID}</h1>
+<h2>This is customer page</h2>
 <ul>
 
 </ul>
