@@ -15,6 +15,7 @@ public class A_HTTP_Methods_Controller {
         return "Get Mapping Invoked 1";
     }
 
+    //this is ambiguous
 //    @GetMapping
 //    public String getMapping2(){
 //        return "Get Mapping Invoked 2";
