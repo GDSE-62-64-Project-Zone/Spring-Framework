@@ -35,10 +35,17 @@ public class F_Request_Headers_Controller {
         return "Get Mapping Invoked 1";
     }
 
-    //to invoke this you have to send content-type=text/html from the fornt
+    //To invoke this you have to send content-type=text/html from the front
     //end
     @GetMapping(consumes = "text/html")
     public String getMapping2() {
         return "Get Mapping Invoked 2";
     }
+
+    @GetMapping(produces = "text/html")
+    public String getMapping3() {
+        return "Get Mapping Invoked 3";
+    }
+
+
 }
