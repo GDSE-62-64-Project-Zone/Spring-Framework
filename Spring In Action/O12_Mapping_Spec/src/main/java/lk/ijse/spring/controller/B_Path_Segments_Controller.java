@@ -35,7 +35,7 @@ public class B_Path_Segments_Controller {
 
     @GetMapping(path = "/three/four")
     public String getMapping4(){
-        return "Get Mapping Invoked 3";
+        return "Get Mapping Invoked 3/4";
     }
 
 
