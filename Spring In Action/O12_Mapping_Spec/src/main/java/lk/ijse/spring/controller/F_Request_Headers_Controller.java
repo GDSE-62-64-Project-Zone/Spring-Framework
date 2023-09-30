@@ -50,5 +50,10 @@ public class F_Request_Headers_Controller {
         return "Get Mapping Invoked 3";
     }
 
+    //The three ways that we can use to narrow down a request
+    //01. Path Variables
+    //02. Query String parameters
+    //03. Request headers
+
 
 }
