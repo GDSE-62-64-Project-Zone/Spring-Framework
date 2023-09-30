@@ -21,9 +21,9 @@ public class C_Path_Variables_Controller {
 //@PathVariable -> required annotation
 
     @GetMapping(path = "/{id}")
-    public String getMapping2(@PathVariable String id){
-        System.out.println(id);
-        return "Get Mapping Invoked 1 "+id;
+    public String getMapping2(@PathVariable("id") String ids){ //alies
+        System.out.println(ids);
+        return "Get Mapping Invoked 1 "+ids;
     }
 
     //request narrow downing using path segments
