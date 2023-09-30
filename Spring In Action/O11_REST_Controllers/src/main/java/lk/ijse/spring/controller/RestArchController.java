@@ -20,16 +20,10 @@ public class RestArchController {
     //Ambiguous Mapping
 
 
-//    @GetMapping
-//    public void test1(){
-//        System.out.println("Test method invoked");
-//    }
-
     @GetMapping
-    public String test2(){
-       return "Hello this is generated from Spring";
+    public String getMapping(){
+       return "Get Mapping Invoked";
     }
-
 
     @PostMapping
     public String postMapping(){
