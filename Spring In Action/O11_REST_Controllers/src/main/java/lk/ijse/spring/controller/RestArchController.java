@@ -3,6 +3,9 @@ package lk.ijse.spring.controller;
 
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
 @RestController
 @RequestMapping("/rest")
 public class RestArchController {
@@ -17,14 +20,16 @@ public class RestArchController {
     //Ambiguous Mapping
 
     @GetMapping
-    public String getMapping1(){
-       return "Get Mapping Invoked 1";
+    public String getMapping1(HttpServletRequest req, HttpServletResponse res){
+        String id = req.getParameter("id");
+        System.out.println(id);
+        return "Get Mapping Invoked 1";
     }
 
-    @GetMapping
-    public String getMapping2(){
-        return "Get Mapping Invoked 2";
-    }
+//    @GetMapping
+//    public String getMapping2(){
+//        return "Get Mapping Invoked 2";
+//    }
 
     @PostMapping
     public String postMapping(){
