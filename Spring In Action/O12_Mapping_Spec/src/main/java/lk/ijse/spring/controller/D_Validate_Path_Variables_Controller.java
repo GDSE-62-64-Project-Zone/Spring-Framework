@@ -35,10 +35,18 @@ public class D_Validate_Path_Variables_Controller {
         return "Get Mapping Invoked 3 ";
     }
 
-
-    @GetMapping(path = "/my/name/*/end")
+    //http://localhost:8080/mapping/validate/my/name/dasunkasun/end
+    //one or more characters inside a segment
+    @GetMapping(path = "/my/name/*/end")//wild card mapping
     public String getMapping4(){
         return "Get Mapping Invoked 4 ";
+    }
+
+
+    //http://localhost:8080/mapping/validate/my/address/dasunkasun/end
+    @GetMapping(path = "/my/address/**/end")//Dual wild card mapping
+    public String getMapping5(){
+        return "Get Mapping Invoked 5";
     }
 
 
