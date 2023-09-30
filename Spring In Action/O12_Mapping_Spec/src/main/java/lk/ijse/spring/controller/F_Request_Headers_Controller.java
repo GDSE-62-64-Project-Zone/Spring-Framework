@@ -42,6 +42,9 @@ public class F_Request_Headers_Controller {
         return "Get Mapping Invoked 2";
     }
 
+    //this handler method will produce only text/html type content
+    //request sender can use Accept header to inform what type
+    //of response body it is expecting from the server
     @GetMapping(produces = "text/html")
     public String getMapping3() {
         return "Get Mapping Invoked 3";
