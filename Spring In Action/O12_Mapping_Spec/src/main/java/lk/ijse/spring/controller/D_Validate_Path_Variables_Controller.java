@@ -15,18 +15,16 @@ public class D_Validate_Path_Variables_Controller {
 //04Multiple Wild Card Validator path={/path/**/id}
 
 
-    //path segments
+    //matchers with path segments
     @GetMapping(path = "/i?d")
-    public String getMapping2(@PathVariable("id") String ids){ //alies
-        System.out.println(ids);
-        return "Get Mapping Invoked 1 "+ids;
+    public String getMapping2(){
+        return "Get Mapping Invoked 1 ";
     }
 
     //request narrow downing using path segments
     @GetMapping(path = "/id??/nam??e")
-    public String getMapping1(@PathVariable String id,@PathVariable String name){
-        System.out.println(id+" "+name);
-        return "Get Mapping Invoked 2 "+id+" "+name;
+    public String getMapping1(){
+        return "Get Mapping Invoked 2 ";
     }
 
 
