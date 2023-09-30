@@ -53,11 +53,19 @@ public class D_Validate_Path_Variables_Controller {
 
     //http://localhost:8080/mapping/validate/myName/Ashan
     //http://localhost:8080/mapping/validate/myName/Dasun
+
     //path variable
-    @GetMapping(path = "/myName/{name:[A-Z]{1}[a-z]{4}}")//Dual wild card mapping
+    @GetMapping(path = "/myName/{name:[A-Z]{1}[a-z]{4}}")
     public String getMapping6(@PathVariable String name){
         System.out.println(name);
         return "Get Mapping Invoked 6"+name;
+    }
+
+    //http://localhost:8080/mapping/validate/myNumbers/1000
+    @GetMapping(path = "/myNumbers/{numbers:[0-9]{5}}")
+    public String getMapping7(@PathVariable String numbers){
+        System.out.println(numbers);
+        return "Get Mapping Invoked 6"+numbers;
     }
 
 
