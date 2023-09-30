@@ -43,11 +43,14 @@ public class D_Validate_Path_Variables_Controller {
     }
 
 
-    //http://localhost:8080/mapping/validate/my/address/dasunkasun/end
+    //http://localhost:8080/mapping/validate/my/address/C001/Dasun/Galle/1199/end
+    //zero or more segments with unlimited characters
     @GetMapping(path = "/my/address/**/end")//Dual wild card mapping
     public String getMapping5(){
         return "Get Mapping Invoked 5";
     }
+
+
 
 
 
