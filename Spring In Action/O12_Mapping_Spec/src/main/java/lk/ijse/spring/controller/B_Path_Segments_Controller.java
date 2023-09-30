@@ -17,6 +17,8 @@ public class B_Path_Segments_Controller {
 //localhost:8080/mapping/segment/three/four
 
 
+//localhost:8080/mapping/segment/C001/four
+
     @GetMapping
     public String getMapping2(){
         return "Get Mapping Invoked 1";
