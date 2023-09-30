@@ -10,9 +10,15 @@ public class C_Path_Variables_Controller {
 //localhost:8080/mapping/customer/C001
 //localhost:8080/mapping/customer/delete/C001
 
+//if you are using path segments then you have to type exact path segment info
 //localhost:8080/mapping/pathVariable/id
 //localhost:8080/mapping/pathVariable/id/name
 
+//when you are using path variables you can pass any data as a path segment
+//localhost:8080/mapping/pathVariable/C001
+//localhost:8080/mapping/pathVariable/C002/Kamal
+
+//@PathVariable -> required annotation
 
     @GetMapping(path = "/{id}")
     public String getMapping2(@PathVariable String id){
