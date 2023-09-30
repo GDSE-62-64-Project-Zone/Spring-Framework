@@ -16,10 +16,14 @@ public class RestArchController {
 
     //Ambiguous Mapping
 
+    @GetMapping
+    public String getMapping1(){
+       return "Get Mapping Invoked 1";
+    }
 
     @GetMapping
-    public String getMapping(){
-       return "Get Mapping Invoked";
+    public String getMapping2(){
+        return "Get Mapping Invoked 2";
     }
 
     @PostMapping
