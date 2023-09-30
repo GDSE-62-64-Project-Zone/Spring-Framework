@@ -11,6 +11,6 @@
     <title>Item Manager</title>
 </head>
 <body>
-<h1>Item Page</h1>
+<h1>Item Page ${ItemName}</h1>
 </body>
 </html>
