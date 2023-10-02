@@ -25,4 +25,9 @@ public class D_Response_Controller {
         return allCustomers;
     }
 
+    @PutMapping
+    public CustomerDTO sendJsonData(@RequestBody CustomerDTO dto){
+       return dto;
+    }
+
 }
