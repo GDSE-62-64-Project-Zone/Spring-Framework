@@ -17,8 +17,8 @@ public class B_X_WWW_Url_Encoded_Controller {
     //@Model Attribute
 
     @PostMapping
-    public String receiveDataWithFormData(){
-        return "X-WWW-Form-URL-Encoded-Data : ";
+    public String receiveDataWithFormData(String id,String name,String address){
+        return "X-WWW-Form-URL-Encoded-Data : "+id+" "+name+" "+address;
     }
 
 }
