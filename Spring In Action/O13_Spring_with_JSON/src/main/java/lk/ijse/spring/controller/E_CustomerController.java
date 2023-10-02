@@ -24,8 +24,7 @@ public class E_CustomerController {
     @ResponseStatus(HttpStatus.CREATED)
     @PostMapping
     public ResponseUtil addCustomer(@RequestBody CustomerDTO dto) {
-            if (dto.getId().equals("C001"))
-                throw new RuntimeException("This is a bad Customer, So you can't add this person.");
+            if (dto.getId().equals("C001")) throw new RuntimeException("This is a bad Customer, So you can't add this person.");
             return new ResponseUtil("Ok", "Successfully Added", dto);
     }
 
