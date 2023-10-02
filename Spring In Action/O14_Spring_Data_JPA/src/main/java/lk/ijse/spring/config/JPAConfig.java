@@ -11,13 +11,15 @@ import javax.sql.DataSource;
 @Configuration
 public class JPAConfig {
 
-
-
+    g
     //data base access (username,password,name,url)
     //Spring data jpa need a vendor to run ORM
     @Bean
     public LocalContainerEntityManagerFactoryBean entityManagerFactory(DataSource ds, JpaVendorAdapter vad){
         LocalContainerEntityManagerFactoryBean factory= new LocalContainerEntityManagerFactoryBean();
+        factory.setDataSource(ds);
+        factory.setJpaVendorAdapter(vad);
+        factory.setPackagesToScan("lk.ijse.spring.entity");
         return factory;
     }
 
