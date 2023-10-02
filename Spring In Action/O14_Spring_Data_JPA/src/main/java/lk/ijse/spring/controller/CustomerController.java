@@ -22,7 +22,7 @@ public class CustomerController {
 
     @DeleteMapping(params = {"id"})
     public void deleteCustomer(String id){
-        customerDAO.deleteById("C001");
+        customerDAO.deleteById(id);
     }
 
     @GetMapping
