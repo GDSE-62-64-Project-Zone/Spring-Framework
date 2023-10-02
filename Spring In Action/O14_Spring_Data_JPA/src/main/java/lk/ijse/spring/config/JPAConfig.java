@@ -52,7 +52,7 @@ public class JPAConfig {
 
     @Bean
     public PlatformTransactionManager transactionManager(EntityManagerFactory factory){
-        return new JpaTransactionManager();
+        return new JpaTransactionManager(factory);
     }
 
 }
