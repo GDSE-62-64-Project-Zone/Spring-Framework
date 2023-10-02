@@ -3,6 +3,7 @@ package lk.ijse.spring.controller;
 
 import lk.ijse.spring.dto.CustomerDTO;
 import lk.ijse.spring.util.ResponseUtil;
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
@@ -20,6 +21,7 @@ public class E_CustomerController {
     //every response should return a json object including state,message and data
     //return
 
+    @ResponseStatus(HttpStatus.CREATED)
     @PostMapping
     public ResponseUtil addCustomer(@RequestBody CustomerDTO dto) {
             if (dto.getId().equals("C001"))
