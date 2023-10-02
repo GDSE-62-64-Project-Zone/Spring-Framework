@@ -1,5 +1,6 @@
 package lk.ijse.spring.controller;
 
+import lk.ijse.spring.dto.CustomerDTO;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -20,9 +21,15 @@ public class B_X_WWW_Url_Encoded_Controller {
     //This will catch x-www-form-url-encoded data without any issue
     //But you have to consider the key names and parameter name
     //front end id=C001 -> String id (key and param name should be same)
-    @PostMapping
-    public String receiveDataWithFormData(String id,String name,String address){
+    @PostMapping(path = "/a")
+    public String receiveDataWithFormData1(String id,String name,String address){
         return "X-WWW-Form-URL-Encoded-Data : "+id+" "+name+" "+address;
+    }
+
+
+    @PostMapping
+    public String receiveDataWithFormData2(CustomerDTO dto){
+        return "X-WWW-Form-URL-Encoded-Data : "+dto.toString();
     }
 
 }
