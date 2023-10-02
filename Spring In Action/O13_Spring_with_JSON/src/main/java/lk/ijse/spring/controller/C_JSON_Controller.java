@@ -1,5 +1,6 @@
 package lk.ijse.spring.controller;
 
+import lk.ijse.spring.dto.CustomerDTO;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -19,8 +20,8 @@ public class C_JSON_Controller {
     //@RequestBody -> HTTP Converters
 
     @PostMapping
-    public String receiveDataWithJson(){
-        return "Json Data : ";
+    public String receiveDataWithJson(CustomerDTO dto){
+        return "Json Data : "+dto.toString();
     }
 
 }
