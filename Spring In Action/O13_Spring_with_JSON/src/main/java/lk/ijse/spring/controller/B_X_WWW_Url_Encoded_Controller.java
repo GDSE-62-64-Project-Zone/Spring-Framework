@@ -27,8 +27,13 @@ public class B_X_WWW_Url_Encoded_Controller {
     }
 
 
+    //if we have more data from the front end we can use encapsulated object to fetch
+    //the data directly to the object
+    //here we can use @ModelAttribute annotation - this is known as a model attribute
+    //But it is not a required annotation like @RequestPram
+    //Supporting data types (Query String & x-www-form-url-encoded)
     @PostMapping
-    public String receiveDataWithFormData2(CustomerDTO dto){
+    public String receiveDataWithFormData2(@ModelAttribute CustomerDTO dto){
         return "X-WWW-Form-URL-Encoded-Data : "+dto.toString();
     }
 
