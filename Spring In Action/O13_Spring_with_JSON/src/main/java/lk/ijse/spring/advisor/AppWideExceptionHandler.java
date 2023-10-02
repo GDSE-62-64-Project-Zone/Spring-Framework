@@ -16,4 +16,6 @@ public class AppWideExceptionHandler {
     public ResponseUtil handleAllRuntimeExceptions(RuntimeException e){
         return new ResponseUtil("Error",e.getMessage(),null);
     }
+
+
 }
