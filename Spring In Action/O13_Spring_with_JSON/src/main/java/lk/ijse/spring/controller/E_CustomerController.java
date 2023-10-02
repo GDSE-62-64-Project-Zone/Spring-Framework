@@ -22,15 +22,9 @@ public class E_CustomerController {
 
     @PostMapping
     public ResponseUtil addCustomer(@RequestBody CustomerDTO dto) {
-        try {
-
             if (dto.getId().equals("C001"))
                 throw new RuntimeException("This is a bad Customer, So you can't add this person.");
             return new ResponseUtil("Ok", "Successfully Added", dto);
-
-        }catch (RuntimeException e){
-            return new ResponseUtil("Error", "Successfully Not Added", e.getCause());
-        }
     }
 
     @DeleteMapping(params = "id")
