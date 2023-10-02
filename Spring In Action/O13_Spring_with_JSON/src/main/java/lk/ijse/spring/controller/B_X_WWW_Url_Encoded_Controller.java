@@ -16,6 +16,10 @@ public class B_X_WWW_Url_Encoded_Controller {
     //How to access above type data from spring
     //@Model Attribute
 
+
+    //This will catch x-www-form-url-encoded data without any issue
+    //But you have to consider the key names and parameter name
+    //font end id=C001 -> String id (key and param name should be same)
     @PostMapping
     public String receiveDataWithFormData(String id,String name,String address){
         return "X-WWW-Form-URL-Encoded-Data : "+id+" "+name+" "+address;
