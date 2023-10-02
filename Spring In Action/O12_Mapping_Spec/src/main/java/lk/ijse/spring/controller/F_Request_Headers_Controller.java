@@ -28,7 +28,7 @@ public class F_Request_Headers_Controller {
     //there will be an error called unsupported media type (415)
 
 
-    //to invoke this you have to send content-type=application/json from the fornt
+    //to invoke this you have to send content-type=application/json from the front
     //end
     @GetMapping(consumes = "application/json")
     public String getMapping1() {
