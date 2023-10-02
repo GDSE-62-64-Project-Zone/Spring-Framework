@@ -8,11 +8,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/customer")
 public class E_CustomerController {
 
-    //add
-    //delete
-    //update
-    //search
-    //get_all
+    //add (POST)
+    //delete (DELETE)
+    //update (PUT)
+    //search (GET)
+    //get_all (GET)
 
-//    return
+    //every response should return a json object including state,message and data
+    //return
+
 }
