@@ -20,9 +20,6 @@ public class ItemServiceImpl implements ItemService {
     @Autowired
     ModelMapper mapper;
 
-    public ItemServiceImpl() {
-        System.out.println("ItemServiceImpl Instantiated");
-    }
 
     @Override
     public void saveItem(ItemDTO item) {
