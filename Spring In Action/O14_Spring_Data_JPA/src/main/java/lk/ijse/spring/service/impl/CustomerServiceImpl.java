@@ -4,6 +4,7 @@ import lk.ijse.spring.dto.CustomerDTO;
 import lk.ijse.spring.entity.Customer;
 import lk.ijse.spring.repo.CustomerRepo;
 import lk.ijse.spring.service.CustomerService;
+import net.bytebuddy.description.method.MethodDescription;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.TypeToken;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -44,6 +45,8 @@ public class CustomerServiceImpl implements CustomerService {
         List<Customer> all = customerRepo.findAll();
         return mapper.map(all, new TypeToken<List<CustomerDTO>>() {
         }.getType());
+        //new TypeToken<>(){}.getType()
+        //new TypeToken<List<CustomerDTO>>(){}.getType()
     }
 
     @Override
