@@ -28,7 +28,7 @@ public class JPAConfig {
         LocalContainerEntityManagerFactoryBean factory= new LocalContainerEntityManagerFactoryBean();
         factory.setDataSource(ds);
         factory.setJpaVendorAdapter(vad);
-        factory.setPackagesToScan("lk.ijse.spring.entity");
+        factory.setPackagesToScan("lk.ijse.spring.entity");// set entity records location to the Spring Data JPA
         return factory;
     }
 
