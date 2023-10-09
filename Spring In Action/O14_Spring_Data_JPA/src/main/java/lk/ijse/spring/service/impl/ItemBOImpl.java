@@ -6,6 +6,6 @@ import org.springframework.stereotype.Service;
 import javax.transaction.Transactional;
 
 @Service
-@Transactional // manage all the transactions here
+@Transactional // manage all the transactions here // AOP
 public class ItemBOImpl implements ItemBO {
 }
