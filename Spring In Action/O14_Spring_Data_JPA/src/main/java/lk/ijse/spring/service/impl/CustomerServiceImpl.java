@@ -8,4 +8,7 @@ import javax.transaction.Transactional;
 @Service
 @Transactional// AOP
 public class CustomerServiceImpl implements CustomerService {
+    public CustomerServiceImpl(){
+        System.out.println("CustomerServiceImpl Instantiated");
+    }
 }
