@@ -7,5 +7,5 @@ import javax.transaction.Transactional;
 
 @Service
 @Transactional// AOP
-public class CustomerBOImpl implements CustomerBO {
+public class CustomerServiceImpl implements CustomerBO {
 }
