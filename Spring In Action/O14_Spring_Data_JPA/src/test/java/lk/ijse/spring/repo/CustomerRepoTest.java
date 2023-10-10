@@ -22,7 +22,6 @@ class CustomerRepoTest {
     @Autowired
     CustomerRepo repo;
 
-
     @Test
     public void testGetAllCustomer(){
         List<Customer> all = repo.findAll();
