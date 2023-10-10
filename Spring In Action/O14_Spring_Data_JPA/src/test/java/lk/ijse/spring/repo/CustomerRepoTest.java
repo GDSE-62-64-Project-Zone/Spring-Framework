@@ -12,6 +12,7 @@ import org.springframework.test.context.web.WebAppConfiguration;
 
 import java.math.BigDecimal;
 import java.util.List;
+import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -36,5 +37,33 @@ class CustomerRepoTest {
         Customer customer = new Customer("C004", "Iman", "Galle", new BigDecimal(100.00));
         repo.save(customer);
     }
+
+
+    @Test
+    public void queryMethodOne(){
+        List<Customer> galle = repo.findCustomerByAddress("Galle");
+        for (Customer customer : galle) {
+            System.out.println(customer.toString());
+        }
+
+    }
+
+    @Test
+    public void queryMethodTwo(){
+//        Customer mathara = repo.readByAddress("Mathara");
+//        System.out.println(mathara.toString());
+
+//        Customer mathara = repo.getByAddress("Mathara");
+//        System.out.println(mathara.toString());
+
+//        Customer mathara = repo.queryByAddress("Mathara");
+//        System.out.println(mathara.toString());
+
+        Long galle = repo.countByAddress("Galle");
+        System.out.println(galle);
+    }
+
+
+
 
 }
