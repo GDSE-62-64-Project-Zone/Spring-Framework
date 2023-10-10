@@ -35,6 +35,8 @@ public class PurchaseOrderServiceImpl implements PurchaseOrderService {
         Orders order = mapper.map(dto, Orders.class);
         ordersRepo.save(order);
 
+        //add Order details also
+
 
 
 
