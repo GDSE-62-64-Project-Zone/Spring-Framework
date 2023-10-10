@@ -27,6 +27,14 @@ public interface CustomerRepo extends JpaRepository<Customer,String> {
 
     //Native SQL Supported
     @Query(value = "select * from Customer",nativeQuery = true)
-    List<Customer> getAllCustomers();
+    List<Customer> getAllCustomers1();
+
+    //JPQL
+    @Query(value = "select c from Customer c")
+    List<Customer> getAllCustomers2();
+
+    //HQL
+    @Query(value = "from Customer c")
+    List<Customer> getAllCustomers3();
 
 }
