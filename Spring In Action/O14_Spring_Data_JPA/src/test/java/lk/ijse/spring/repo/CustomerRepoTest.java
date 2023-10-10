@@ -59,8 +59,13 @@ class CustomerRepoTest {
 //        Customer mathara = repo.queryByAddress("Mathara");
 //        System.out.println(mathara.toString());
 
-        Long galle = repo.countByAddress("Galle");
-        System.out.println(galle);
+//        Long galle = repo.countByAddress("Galle");
+//        System.out.println(galle);
+
+        List<Customer> allCustomers = repo.getAllCustomers();
+        for (Customer allCustomer : allCustomers) {
+            System.out.println(allCustomer.toString());
+        }
     }
 
 
