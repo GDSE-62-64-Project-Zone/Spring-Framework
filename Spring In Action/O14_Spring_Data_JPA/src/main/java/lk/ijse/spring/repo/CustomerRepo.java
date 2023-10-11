@@ -21,7 +21,6 @@ public interface CustomerRepo extends JpaRepository<Customer,String> {
     Long countByAddress(String address);
     Customer findBySalaryAndName(String salary,String name);
 
-
     //Native SQL Supported
     @Query(value = "select * from Customer",nativeQuery = true)
     List<Customer> getAllCustomers1();
@@ -33,7 +32,6 @@ public interface CustomerRepo extends JpaRepository<Customer,String> {
     //HQL
     @Query(value = "from Customer c")
     List<Customer> getAllCustomers3();
-
 
 
     //what about params.?
